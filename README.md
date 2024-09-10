@@ -1,8 +1,8 @@
-## DGM-CS236
+# DGM-CS236
 - 가짜연구소 9기 프로젝트
 - 생성모델 온라인 강의 (CS236) 공부
 
-# 온라인 강의 목차
+## 온라인 강의 목차
 1.Introduction
 2.Background
 3.Autoregressive models
