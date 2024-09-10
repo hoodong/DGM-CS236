@@ -2,7 +2,7 @@
 - 가짜연구소 9기 프로젝트
 - 생성모델 온라인 강의 (CS236) 공부
 
-## Things to learn (lecture number)
+## Things to learn (lecture no)
 - Introduction & background (1,2)  
 - Autoregressive models (3)    
 - Maximum likelihood learning (4)  
