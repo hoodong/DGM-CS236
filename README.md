@@ -1,6 +1,7 @@
 # DGM-CS236
 - 가짜연구소 9기 프로젝트
 - 생성모델 온라인 강의 (CS236) 공부
+- 강의 슬라이드에 대한 질문/의견을 여기에 간략히 정리 
 
 ## Things to learn (lecture no)
 - Introduction & background (1,2)  
