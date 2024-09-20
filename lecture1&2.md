@@ -42,7 +42,7 @@
   - classification 문제에 naive Bayes를 사용한다면
     - 데이터를 이용해 파라미터 학습: $P(Y), P(X_i|Y)$
     - Bayes rule을 이용해 예측  
-      $P(Y|X) = \frac{P(X|Y)P(Y)}{\sum_{y}P(X|Y)P(Y)}$  
+      $$P(Y|X) = \frac{P(X|Y)P(Y)}{\sum_{y}P(X|Y)P(Y)}$$    
       where $P(X|Y) = \prod_{i}^{n}{p(x_i|Y)}$ (조건부 독립)
     
      
