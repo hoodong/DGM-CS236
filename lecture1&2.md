@@ -30,6 +30,9 @@
     - eg. $p(d,i,g,s,l)=p(d)p(i)p(d|i,d)p(s|i)p(l|g)$
   - 유향 비순환 그래프 (directed acyclic graph; DAG)로 기술할 수 있다.
     - $G(V,E)$에서 노드 $V$는 확률변수를, 에지 $E$는 "조건부 종속"을 나타낸다.
+    - 예를 들어 Sprinkler, Rain, Grass wet는 P(G,S,R) = P(G|S,R)P(S|R)P(R)
+![image](https://github.com/user-attachments/assets/6913b336-5d85-4257-81c9-6e0d9f03e015)
+ 
   - 독립 (independent) vs. 조건부 독립 (conditional independent)
     - 독립: $A \perp B$ $\leftrightarrow$ $P(A|B) = P(A)$
     - 조건부 독립: $A \perp B|C$ $\leftrightarrow$ $P(A|B,C) = P(A|C)$
