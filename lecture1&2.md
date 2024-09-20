@@ -38,12 +38,16 @@
     - 독립이 아니면 종속
 - naive Bayes
   - 모든 feature가 조건부 독립이라고 가정 (label이 주어졌을 때)  
-    $p(y,x_1,...,x_n) = p(y)\prod_{i=1}^{n}{p(x_i|y)}$
+    $p(y,x_1,...,x_n) = p(y)\prod_{i=1}^{n}{p(x_i|y)}$  
+    $X_i \perp X_{-i} | Y$  
   - classification 문제에 naive Bayes를 사용한다면
     - 데이터를 이용해 파라미터 학습: $P(Y), P(X_i|Y)$
     - Bayes rule을 이용해 예측  
       $P(Y|X) = \frac{P(X|Y)P(Y)}{\sum_{y}P(X|Y)P(Y)}$  
       where $P(X|Y) = \prod_{i=1}^{n}{p(x_i|Y)}$
+- 판별(discrimitive) vs 생성(generative) 모형
+  - 판별 모형은 $P(Y|X)$, 생성 모형은 $P(X|Y)$에 관심을 가짐
+  - 생성 모형은 $P(Y)$도 필요함. $P(X,Y)=P(Y)P(X|Y)$  
     
      
     
