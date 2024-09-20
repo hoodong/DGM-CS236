@@ -37,6 +37,6 @@
     - 조건부 독립: $A \perp B|C$ $\leftrightarrow$ $P(A|B,C) = P(A|C)$
     - 독립이 아니면 종속
 - naive Bayes
-  - 모든 feature가 서로 독립이라고 가정 (label이 주어졌을 때)
+  - 모든 feature가 조건부 독립이라고 가정 (label이 주어졌을 때)
     $p(y,x_1,...,x_n) = p(y)\prod_{i=1}^{n}{p(x_i|y)}$ 
     
