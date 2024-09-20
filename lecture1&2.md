@@ -30,7 +30,8 @@
     - eg. $p(d,i,g,s,l)=p(d)p(i)p(d|i,d)p(s|i)p(l|g)$
   - 유향 비순환 그래프 (directed acyclic graph; DAG)로 기술할 수 있다.
     - $G(V,E)$에서 노드 $V$는 확률변수를, 에지 $E$는 "조건부 종속"을 나타낸다.
-  - 조건부 독립 (conditional independent)
-    - $A \perp B$ $\leftrightarrow$ $P(A|B) = P(A)$ or $P(B|A) = P(B)$
-    - $A \perp B|C$ $P(A|B,C) = P(A|C)$ 
-    - 독립이 아니면 종속이다.
+  - 독립 (independent) vs. 조건부 독립 (conditional independent)
+    - 독립: $A \perp B$ $\leftrightarrow$ $P(A|B) = P(A)$ or $P(B|A) = P(B)$
+    - 조건부 독립: $A \perp B|C$ $\leftrightarrow$ $P(A|B,C) = P(A|C)$
+    - 독립이 아니면 종속 
+    
