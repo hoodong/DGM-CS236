@@ -27,7 +27,8 @@
 - Bayes 네트워크  
   - 결합확률분포를 조건부확률로 표현 (연쇄율에서 조건부 독립을 가정)
     - $P(X_1,...,X_n)=\prod{P(X_i|X_{A_i})}$
-    - eg. $p(d,i,g,s,l)=p(d)p(i)p(d|i,d)p(s|i)p(l|g)$
+    - eg. difficulty, intelligence, grade, SAT, letter
+      $p(d,i,g,s,l)=p(d)p(i)p(g|i,d)p(s|i)p(l|g)$ 는 $D\prep I, S\prep {D,G}|I, L\prep {I,D,S}|G$를 의미
   - 유향 비순환 그래프 (directed acyclic graph; DAG)로 기술할 수 있다.
     - $G(V,E)$에서 노드 $V$는 확률변수를, 에지 $E$는 "조건부 종속"을 나타낸다.
     - 예를 들어 Sprinkler, Rain, Grass wet는 P(G,S,R) = P(G|S,R)P(S|R)P(R) 
