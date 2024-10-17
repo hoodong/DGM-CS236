@@ -1,7 +1,7 @@
 # DGM-CS236
 - 가짜연구소 9기 프로젝트
 - 생성모델 온라인 강의 (CS236) 공부
-- 강의 슬라이드에 대한 질문/의견을 간략히 정리 
+- 강의 슬라이드에 대한 요약과 질문을 간략히 정리 
 
 ## Things to learn (lecture no)
 - Introduction & background (1,2)  
@@ -17,3 +17,26 @@
 - Discrete-latent variable models (17) 
 - Diffusion models for discrete data (18) 
 
+## Lecture 1. Introduction 
+- 생성모형에서 핵심질문
+  - 표현: 많은 확률변수들의 결합분포를 어떻게 모델링할 것인가?
+  - 학습: 확률분포를 비교하는 올바른 방법은 무엇인가?
+  - 추론: 생성과정에서 어떻게 추론을 수행할 것인가?
+
+## Lecture 2. Background
+- 생성모형은 확률분포를 학습한다. 이 확률분포는 sampling, anomaly detection, feature extraction에 사용될 수 있다.
+- 결합확률분포를 정확히 표현하려면 많은 파라미터가 필요하다. 파라미터 수를 줄이기 위해 근사를 적용한 모형을 사용한다.
+- 연쇄율을 이용하면 결합확률분포를 조건부 확률들의 곱으로 표현할 수 있다. 이것을 Bayes net이라고 하고 유향 비순환 그래프로 기술할 수 있다.
+- Bayes net 조건부 독립을 이용해서 파라미터 수를 줄인다. 예를 들어 naive Bayes는 모든 feature가 독립이라고 가정한다.  
+- 판별모형에서는 $P(Y|X)$, 생성모형에서는 $P(X,Y)=P(Y|X)P(X)$에 관심을 가진다.
+
+## Lecture 3. Autoregressive models
+
+## Lecture 4. Maximum likelihood learning
+
+## Lecture 5. Latent variavle models
+- 측정된 데이터에서는 관찰되지 않는 숨겨진 변수가 있다. 이 잠재변수는 관측변수보다 차원이 낮다.
+- evidence는 marginal likelihood $p(x)$를 의미한다. 여기서 marginal은 모든 잠재변수에 대해 적분함을 의미한다.
+- ELBO는 evidence lower bound를 의미한다. variational inference에서 evidence $p(x)$를 근사하는데 사용된다.
+- evidence = ELBO + KL divergence로 나타낼 수 있다. 따라서 ELBO는 evidence의 하한이다.
+  
