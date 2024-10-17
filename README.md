@@ -35,7 +35,7 @@
 ## Lecture 4. Maximum likelihood learning
 
 ## Lecture 5. Latent variavle models
-- 측정된 데이터에서는 관찰되지 않는 숨겨진 변수가 있다. 이 잠재변수는 관측변수보다 차원이 낮다.
+- 측정 데이터에서는 보이지 않는 숨겨진 변수가 있다. 이 잠재변수는 관측변수보다 차원이 낮다.
 - evidence는 marginal likelihood $p(x)$를 의미한다. 여기서 marginal은 모든 잠재변수에 대해 적분함을 의미한다.
 - ELBO는 evidence lower bound를 의미한다. variational inference에서 evidence $p(x)$를 근사하는데 사용된다.
 - evidence = ELBO + KL divergence로 나타낼 수 있다. 따라서 ELBO는 evidence의 하한이다.
