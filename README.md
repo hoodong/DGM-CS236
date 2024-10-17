@@ -24,7 +24,7 @@
   - 추론: 생성과정에서 어떻게 추론을 수행할 것인가?
 
 ## Lecture 2. Background
-- 생성모형은 확률분포를 학습한다. 이 확률분포는 sampling, anomaly detection, feature extraction에 사용될 수 있다.
+- 생성모형은 확률분포를 학습한다. 이 확률분포를 사용해 sampling, anomaly detection, feature extraction을 할 수 있다.
 - 결합확률분포를 정확히 표현하려면 많은 파라미터가 필요하다. 파라미터 수를 줄이기 위해 근사를 적용한 모형을 사용한다.
 - 연쇄율을 이용하면 결합확률분포를 조건부 확률들의 곱으로 표현할 수 있다. 이것을 Bayes net이라고 하고 유향 비순환 그래프로 기술할 수 있다.
 - Bayes net 조건부 독립을 이용해서 파라미터 수를 줄인다. 예를 들어 naive Bayes는 모든 feature가 독립이라고 가정한다.  
