@@ -34,9 +34,9 @@
 
 ## Lecture 4. Maximum likelihood learning
 - 학습된 확률분포와 데이터 확률분포가 최대한 가까워지도록 학습해야 한다. 
-- 두 분포의 거리를 측정하는데 KL divergence를 사용한다. KL divergence $D(p||q)$는 $p$ 대신 $q$를 써서 데이터를 압축할 때 추가되는 비트수를 의미한다.
+- 두 분포의 거리를 측정하는데 KL divergence를 사용한다. KL divergence $D(p\parallel q)$는 $p$ 대신 $q$를 써서 데이터를 압축할 때 추가되는 비트수를 의미한다.
 - 생성모형에서 KL divergence를 최대화하는 것은 log-likelihood의 기대값을 최대화하는 것과 같다.
-- 데이터 분포를 모르니까 기대값 대신 표본평균을 사용한다. (empirical log-likelihood)
+- 데이터 분포를 모르니까 기대값 대신 표본평균을 사용한다. (expected log-likelihood $\approx$ empirical log-likelihood)
 - 따라서 ML learning이 되고, 늘 그래왔듯이 stochastic gradient descent로 학습시킬 수 있다.
 
 ## Lecture 5. Latent variavle models
