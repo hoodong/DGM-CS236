@@ -9,7 +9,7 @@
 - Maximum likelihood learning (4)  
 - VAEs (5,6)  
 - Normalizing flows (7,9)  
-- GANs (8,10)    
+- GANs (8,10)     
 - Energy based models (11,12,14)  
 - Score based models (13)
 - Evaluation of generative models (15)
