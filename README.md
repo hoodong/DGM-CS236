@@ -40,8 +40,11 @@
 - 따라서 ML learning이 되고, 늘 그래왔듯이 stochastic gradient descent로 학습시킬 수 있다.
 
 ## Lecture 5. Latent variavle models
-- 측정 데이터에서는 관측되지 않는 않는 숨겨진 변수가 있다. 이 잠재변수는 관측변수보다 차원이 낮다.
-- 베이지안 추론에서 evidence는 marginal likelihood $p(x)$를 의미한다. 여기서 marginal은 모든 잠재변수에 대해 적분함을 의미한다.
-- ELBO는 evidence lower bound를 의미한다. variational inference에서 evidence $p(x)$를 근사하는데 사용된다.
-- 일반적으로 evidence = ELBO + KL divergence로 주어진다. 따라서 ELBO는 evidence의 하한이다.
+- 데이터에서 관측되지 않는 않는 숨겨진 변수가 있다. 이 잠재변수는 저차원 공간에서 데이터의 중요한 특징을 압축적으로 표현한다.
+- 잠재변수 $z$를 도입하면 확률분포는 $p(x,z)=p(z)p(x|z)$로 표현되고 $p(z)$와 $p(x|z)$을 간단한 분포로 모델링할 수 있다.
+- $x$만 관측되고 $z$는 관측되지 않은 변수이므로 잠재변수 모형을 학습려면 marginal likelihood $p(x)$를 최대화해야 한다.
+- 베이지안 추론에서 marginal likelihood $p(x)$를 evidence라고 부른다. 여기서 marginal은 모든 잠재변수에 대해 적분함을 의미한다.
+- 하지만 $p(x)$를 구하려면 $p(x,z)$를 잠재변수 $z$에 대해 적분해야 하는데 이 계산이 잘 풀리지 않는다.(intractable)
+- ELBO는 evidence lower bound를 의미한다. evidence $p(x)$를 근사하는데 사용된다.
+- 일반적으로 log-evidence = ELBO + KL divergence로 주어진다. 따라서 ELBO는 evidence의 하한이다.
   
